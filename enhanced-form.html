@@ -1,0 +1,150 @@
+<!DOCTYPE html> <!-- Declares the document type as HTML5 -->
+<html lang="en"> <!-- Sets the language of the document to English -->
+<head>
+  <meta charset="UTF-8" /> <!-- Defines character encoding -->
+  <meta name="viewport" content="width=device-width", initial-scale="1.0" /> <!-- Ensures responsive design on mobile -->
+  <meta name="author" content="Ayanda Mbuyisa"> <!-- Author metadata -->
+  <title>Enhanced HTML5 Form</title> <!-- Page title -->
+</head>
+<body>
+
+    <!-- Header -->
+  <header>
+    <h1> Enhanced HTML5 Page</h1>
+    <p>This assignment focuses on elevating HTML5 skills by working with advanced 
+        content elements and mastering the creation, structure, and validation of web forms.
+    </p>
+  </header>
+
+  <main>
+
+    <!-- List Section -->
+    <section>
+      <h2>Key Services</h2>
+      <ul>
+        <li>Database Design</li>
+        <li>Full Stack Development</li>
+        <li>Mobile App Development</li>
+        <li>Website Development & Hosting</li>
+      </ul>
+    </section>
+
+    <!-- Table Section with team members -->
+    <section>
+      <h2>Team Members</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ayanda Mbuyisa</td>
+            <td>Frontend Developer</td>
+            <td>Mbabane, Eswatini</td>
+          </tr>
+          <tr>
+            <td>Msimisi Masuku</td>
+            <td>Network Engineerer</td>
+            <td>Mbabane, Eswatini</td>
+          </tr>
+          <tr>
+            <td>Khayelihle Ngwenya</td>
+            <td>Backend Developer</td>
+            <td>Mbabane, Eswatini</td>
+          </tr>
+          <tr>
+            <td>Lebo Dlamini</td>
+            <td>UX Designer</td>
+            <td>Johannesburg, South Africa</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media Section with audio -->
+    <section>
+      <h2> Sample Audio</h2>
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="/submit" method="POST" autocomplete="on" novalidate>
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="e.g., Ayanda Mbuyisa" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@gmail.com" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="e.g., 26876416393" required />
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country" value="Eswatini" readonly class="readonly" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" minlength="4" maxlength="12" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" minlength="6" maxlength="25" required />
+
+          <label for="website">Portfolio Website:</label>
+          <input type="url" id="website" name="website" placeholder="https://yourportfolio.com" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">--Select--</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="bio">Short Bio:</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..." required></textarea>
+
+          <label for="skills">Skills:</label>
+          <input type="text" id="skills" name="skills" placeholder="e.g., HTML, CSS, Python" />
+
+          <label for="resume">Upload Resume:</label>
+          <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" />
+
+          <label>
+            Subscribe to newsletter <input type="checkbox" name="newsletter" />
+          </label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2025 Ayanda Mbuyisa. Built in Eswatini.</p>
+  </footer>
+
+</body>
+</html>
+
